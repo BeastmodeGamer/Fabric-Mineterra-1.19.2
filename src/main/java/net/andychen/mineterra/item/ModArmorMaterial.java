@@ -28,7 +28,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     TUNGSTEN("tungsten", 18, new int[]{2, 5, 6, 3}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.TUNGSTEN_INGOT})),
     PLATINUM("platinum", 21, new int[]{2, 6, 6, 3}, 11, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.5f, 0.0F, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.PLATINUM_INGOT})),
     DEMONITE("demonite", 24, new int[]{2, 6, 7, 3}, 12, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.0f, 0.0F, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.DEMONITE_INGOT})),
-    CRIMSON("crimson", 25, new int[]{2, 6, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.0f, 0.0F, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.CRIMTANE_INGOT})),
+    CRIMTANE("crimtane", 25, new int[]{2, 6, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.0f, 0.0F, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.CRIMTANE_INGOT})),
     METEORITE("meteorite", 23, new int[]{2, 5, 6, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.0f, 0.0F, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.METEORITE_INGOT})),
     HELLSTONE("hellstone", 35, new int[]{3, 6, 8, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.0F, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.HELLSTONE_INGOT}));
 

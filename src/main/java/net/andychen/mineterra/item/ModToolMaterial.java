@@ -17,6 +17,7 @@ public enum ModToolMaterial implements ToolMaterial {
     GOLD(0, 32, 12.0F, 0.0F, 22, () -> Ingredient.ofItems(new ItemConvertible[]{Items.GOLD_INGOT})),
     NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_INGOT})),
 
+    // MOD MATERIALS
     COPPER(1, 200, 5.0F, 1.5F, 20, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.CRIMTANE_INGOT}); // Stronger & Faster than Stone
     }),

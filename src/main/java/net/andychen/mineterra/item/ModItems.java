@@ -9,19 +9,6 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
-    public static final Item AMETHYST = registerItem("amethyst",
-            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-    public static final Item TOPAZ = registerItem("topaz",
-            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-    public static final Item SAPPHIRE = registerItem("sapphire",
-            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-    public static final Item EMERALD = registerItem("emerald",
-            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-    public static final Item RUBY = registerItem("ruby",
-            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-    public static final Item DIAMOND = registerItem("diamond",
-            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-
     // COPPER
     public static final Item COPPER_ORE = registerItem("copper_ore",
             new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
@@ -34,6 +21,8 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.COPPER, 1, -2.8f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item COPPER_AXE = registerItem("copper_axe",
             new AxeItem(ModToolMaterial.COPPER, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
+            new ShovelItem(ModToolMaterial.COPPER, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item COPPER_HELMET = registerItem("copper_helmet",
             new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
@@ -56,6 +45,8 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.TIN, 1, -2.8f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item TIN_AXE = registerItem("tin_axe",
             new AxeItem(ModToolMaterial.TIN, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item TIN_SHOVEL = registerItem("tin_shovel",
+            new ShovelItem(ModToolMaterial.TIN, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item TIN_HELMET = registerItem("tin_helmet",
             new ArmorItem(ModArmorMaterial.TIN, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
@@ -78,6 +69,8 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.LEAD, 1, -2.8f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item LEAD_AXE = registerItem("lead_axe",
             new AxeItem(ModToolMaterial.LEAD, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item LEAD_SHOVEL = registerItem("lead_shovel",
+            new ShovelItem(ModToolMaterial.LEAD, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item LEAD_HELMET = registerItem("lead_helmet",
             new ArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
@@ -100,6 +93,8 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.SILVER, 1, -2.8f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item SILVER_AXE = registerItem("silver_axe",
             new AxeItem(ModToolMaterial.SILVER, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item SILVER_SHOVEL = registerItem("silver_shovel",
+            new ShovelItem(ModToolMaterial.SILVER, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item SILVER_HELMET = registerItem("silver_helmet",
             new ArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
@@ -122,6 +117,8 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.TUNGSTEN, 1, -2.8f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item TUNGSTEN_AXE = registerItem("tungsten_axe",
             new AxeItem(ModToolMaterial.TUNGSTEN, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item TUNGSTEN_SHOVEL = registerItem("tungsten_shovel",
+            new ShovelItem(ModToolMaterial.TUNGSTEN, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item TUNGSTEN_HELMET = registerItem("tungsten_helmet",
             new ArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
@@ -144,6 +141,8 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.PLATINUM, 1, -2.8f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item PLATINUM_AXE = registerItem("platinum_axe",
             new AxeItem(ModToolMaterial.PLATINUM, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item PLATINUM_SHOVEL = registerItem("platinum_shovel",
+            new ShovelItem(ModToolMaterial.PLATINUM, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
             new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
@@ -166,6 +165,8 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.DEMONITE, 1, -2.8f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item DEMONITE_AXE = registerItem("demonite_axe",
             new AxeItem(ModToolMaterial.DEMONITE, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item DEMONITE_SHOVEL = registerItem("demonite_shovel",
+            new ShovelItem(ModToolMaterial.DEMONITE, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item DEMONITE_HELMET = registerItem("demonite_helmet",
             new ArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
@@ -188,15 +189,17 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.CRIMTANE, 1, -2.8f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item CRIMTANE_AXE = registerItem("crimtane_axe",
             new AxeItem(ModToolMaterial.CRIMTANE, 5, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item CRIMTANE_SHOVEL = registerItem("crimtane_shovel",
+            new ShovelItem(ModToolMaterial.CRIMTANE, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
-    public static final Item CRIMSON_HELMET = registerItem("crimson_helmet",
-            new ArmorItem(ModArmorMaterial.CRIMSON, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-    public static final Item CRIMSON_CHESTPLATE = registerItem("crimson_chestplate",
-            new ArmorItem(ModArmorMaterial.CRIMSON, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-    public static final Item CRIMSON_LEGGINGS = registerItem("crimson_leggings",
-            new ArmorItem(ModArmorMaterial.CRIMSON, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
-    public static final Item CRIMSON_BOOTS = registerItem("crimson_boots",
-            new ArmorItem(ModArmorMaterial.CRIMSON, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item CRIMTANE_HELMET = registerItem("crimtane_helmet",
+            new ArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item CRIMTANE_CHESTPLATE = registerItem("crimtane_chestplate",
+            new ArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item CRIMTANE_LEGGINGS = registerItem("crimtane_leggings",
+            new ArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item CRIMTANE_BOOTS = registerItem("crimtane_boots",
+            new ArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // METEORITE
     public static final Item METEORITE_ORE = registerItem("meteorite_ore",
@@ -228,6 +231,8 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.HELLSTONE, 2, -2.8f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_AXE = registerItem("hellstone_axe",
             new AxeItem(ModToolMaterial.HELLSTONE, 6, -3.0f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
+    public static final Item HELLSTONE_SHOVEL = registerItem("hellstone_shovel",
+            new ShovelItem(ModToolMaterial.HELLSTONE, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item HELLSTONE_HELMET = registerItem("hellstone_helmet",
             new ArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.HEAD, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
@@ -238,6 +243,19 @@ public class ModItems {
     public static final Item HELLSTONE_BOOTS = registerItem("hellstone_boots",
             new ArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.FEET, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
 
+    // GEMS
+    public static final Item AMETHYST = registerItem("amethyst",
+            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item TOPAZ = registerItem("topaz",
+            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item SAPPHIRE = registerItem("sapphire",
+            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item EMERALD = registerItem("emerald",
+            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item RUBY = registerItem("ruby",
+            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item DIAMOND = registerItem("diamond",
+            new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(MineTerra.MOD_ID, name), item);
