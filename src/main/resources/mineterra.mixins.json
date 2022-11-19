@@ -4,9 +4,12 @@
   "package": "net.andychen.mineterra.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "PlayerEntityManaMixin",
+    "ServerPlayerEntityManaMixin"
   ],
   "client": [
-    "MineTerraMixin"
+    "client.MineTerraMixin",
+    "client.InGameHudMixin"
   ],
   "injectors": {
     "defaultRequire": 1

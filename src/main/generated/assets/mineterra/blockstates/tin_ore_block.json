@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mineterra:block/tin_ore_block"
+    }
+  }
+}

@@ -5,6 +5,7 @@
 	"item.mineterra.copper_pickaxe": "Copper Pickaxe",
 	"item.mineterra.copper_axe": "Copper Axe",
 	"item.mineterra.copper_shovel": "Copper Shovel",
+	"item.mineterra.copper_bow": "Copper Bow",
 	"item.mineterra.copper_helmet": "Copper Helmet",
 	"item.mineterra.copper_chestplate": "Copper Chainmail",
 	"item.mineterra.copper_leggings": "Copper Greaves",
@@ -71,6 +72,7 @@
 	"item.mineterra.demonite_pickaxe": "Nightmare Pickaxe",
 	"item.mineterra.demonite_axe": "War Axe of the Night",
 	"item.mineterra.demonite_shovel": "Spade of the Shadows",
+	"item.mineterra.demonite_bow": "Demon Bow",
 	"item.mineterra.demonite_helmet": "Shadow Helmet",
 	"item.mineterra.demonite_chestplate": "Shadow Scalemail",
 	"item.mineterra.demonite_leggings": "Shadow Greaves",
@@ -82,6 +84,7 @@
 	"item.mineterra.crimtane_pickaxe": "Deathbringer Pickaxe",
 	"item.mineterra.crimtane_axe": "Blood Lust Cluster",
 	"item.mineterra.crimtane_shovel": "Blood Clot Shovel",
+	"item.mineterra.crimtane_bow": "Tendon Bow",
 	"item.mineterra.crimtane_helmet": "Crimson Helmet",
 	"item.mineterra.crimtane_chestplate": "Crimson Scalemail",
 	"item.mineterra.crimtane_leggings": "Crimson Greaves",
@@ -101,6 +104,7 @@
 	"item.mineterra.hellstone_pickaxe": "Molten Pickaxe",
 	"item.mineterra.hellstone_axe": "Molten Hamaxe",
 	"item.mineterra.hellstone_shovel": "Molten Shovel",
+	"item.mineterra.hellstone_bow": "Molten Fury",
 	"item.mineterra.hellstone_helmet": "Molten Helmet",
 	"item.mineterra.hellstone_chestplate": "Molten Breastplate",
 	"item.mineterra.hellstone_leggings": "Molten Greaves",
@@ -112,6 +116,26 @@
 	"item.mineterra.emerald": "Emerald",
 	"item.mineterra.ruby": "Ruby",
 	"item.mineterra.diamond": "Diamond",
+
+	"item.mineterra.mana_crystal": "Mana Crystal",
+
+	"block.mineterra.amethyst_ore_block": "Amethyst Ore",
+	"block.mineterra.topaz_ore_block": "Topaz Ore",
+	"block.mineterra.sapphire_ore_block": "Sapphire Ore",
+	"block.mineterra.emerald_ore_block": "Emerald Ore",
+	"block.mineterra.ruby_ore_block": "Ruby Ore",
+	"block.mineterra.diamond_ore_block": "Diamond Ore",
+
+	"block.mineterra.copper_ore_block": "Copper Ore",
+	"block.mineterra.tin_ore_block": "Tin Ore",
+	"block.mineterra.lead_ore_block": "Lead Ore",
+	"block.mineterra.silver_ore_block": "Silver Ore",
+	"block.mineterra.tungsten_ore_block": "Tungsten Ore",
+	"block.mineterra.platinum_ore_block": "Platinum Ore",
+	"block.mineterra.demonite_ore_block": "Demonite Ore",
+	"block.mineterra.crimtane_ore_block": "Crimtane Ore",
+	"block.mineterra.meteorite_ore_block": "Meteorite",
+	"block.mineterra.hellstone_ore_block": "Hellstone",
 
 	"itemGroup.mineterra.mineterra": "MineTerra"
 }

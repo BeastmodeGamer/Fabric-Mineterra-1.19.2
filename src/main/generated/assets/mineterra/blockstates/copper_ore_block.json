@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mineterra:block/copper_ore_block"
+    }
+  }
+}

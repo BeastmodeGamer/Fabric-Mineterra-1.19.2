@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mineterra:block/crimtane_ore_block"
+  }
+}

@@ -1,4 +1,4 @@
-package net.andychen.mineterra.mixin;
+package net.andychen.mineterra.mixin.client;
 
 import net.andychen.mineterra.MineTerra;
 import net.minecraft.client.gui.screen.TitleScreen;

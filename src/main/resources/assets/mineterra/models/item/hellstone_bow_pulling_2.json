@@ -1,0 +1,6 @@
+{
+    "parent": "mineterra:item/hellstone_bow",
+    "textures": {
+        "layer0": "mineterra:item/hellstone_bow_pulling_2"
+    }
+}

@@ -1,5 +1,6 @@
 package net.andychen.mineterra.datagen;
 
+import net.andychen.mineterra.block.ModBlocks;
 import net.andychen.mineterra.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -14,7 +15,23 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        //blockStateModelGenerator.registerCubeAllModelTexturePool()
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.AMETHYST_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TOPAZ_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SAPPHIRE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EMERALD_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUBY_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DIAMOND_ORE);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COPPER_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TIN_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LEAD_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SILVER_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TUNGSTEN_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PLATINUM_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEMONITE_ORE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CRIMTANE_ORE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.METEORITE_ORE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HELLSTONE_ORE_BLOCK);
     }
 
     @Override

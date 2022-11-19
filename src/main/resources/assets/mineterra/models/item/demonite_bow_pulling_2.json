@@ -1,0 +1,6 @@
+{
+    "parent": "mineterra:item/demonite_bow",
+    "textures": {
+        "layer0": "mineterra:item/demonite_bow_pulling_2"
+    }
+}

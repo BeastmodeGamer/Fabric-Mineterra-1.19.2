@@ -1,0 +1,16 @@
+{
+  "entity.player.full_mana": {
+    "category": "player",
+    "subtitle": "Full mana reached",
+    "sounds": [
+      "mineterra:entity/player/full_mana"
+    ]
+  },
+  "item.mana_crystal.use": {
+    "category": "neutral",
+    "subtitle": "Mana crystal used",
+    "sounds": [
+      "mineterra:item/mana_crystal"
+    ]
+  }
+}
