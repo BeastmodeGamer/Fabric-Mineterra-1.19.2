@@ -3,6 +3,7 @@ package net.andychen.mineterra;
 import net.andychen.mineterra.entity.client.armor.CopperArmorRenderer;
 import net.andychen.mineterra.item.ModItems;
 import net.andychen.mineterra.networking.ModNetworking;
+import net.andychen.mineterra.particle.ModParticleRegistry;
 import net.andychen.mineterra.util.ModModelPredicateProvider;
 import net.fabricmc.api.ClientModInitializer;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
@@ -13,6 +14,7 @@ public class MineTerraClient implements ClientModInitializer {
 
         ModNetworking.registerS2CPackets();
 
+        ModParticleRegistry.registerParticles();
         ModModelPredicateProvider.registerModModels();
 
         GeoArmorRenderer.registerArmorRenderer(new CopperArmorRenderer(), ModItems.COPPER_HELMET,

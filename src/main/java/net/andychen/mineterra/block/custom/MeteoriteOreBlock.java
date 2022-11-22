@@ -1,12 +1,12 @@
 package net.andychen.mineterra.block.custom;
 
+import net.andychen.mineterra.particle.ModParticles;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
@@ -24,20 +24,21 @@ public class MeteoriteOreBlock extends Block {
         super.onSteppedOn(world, pos, state, entity);
     }
 
-    public void randDisplayTick(BlockState state, World world, BlockPos pos, Random rand) {
-        if (rand.nextInt(5) == 0) {
-            world.addParticle(ParticleTypes.FLAME, (float) pos.getX() + rand.nextFloat(),
-                    (float) pos.getY() + 1.1F, (float) pos.getZ() + rand.nextFloat(), 0.0D, 0.0D,
+    @Override
+    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
+        if (random.nextInt(5) == 0) {
+            world.addParticle(ModParticles.FIRE, (float) pos.getX() + random.nextFloat(),
+                    (float) pos.getY() + 1.1F, (float) pos.getZ() + random.nextFloat(), 0.0D, 0.0D,
                     0.0D);
         }
-        if (rand.nextInt(15) == 0) {
-            world.addParticle(ParticleTypes.FLAME, (float) pos.getX() + rand.nextFloat(),
-                    (float) pos.getY() + 1.1F, (float) pos.getZ() + rand.nextFloat(), 0.0D, 0.0D,
+        if (random.nextInt(15) == 0) {
+            world.addParticle(ModParticles.FIRE, (float) pos.getX() + random.nextFloat(),
+                    (float) pos.getY() + 1.1F, (float) pos.getZ() + random.nextFloat(), 0.0D, 0.0D,
                     0.0D);
         }
-        if (rand.nextInt(25) == 0) {
-            world.addParticle(ParticleTypes.FLAME, (float) pos.getX() + rand.nextFloat(),
-                    (float) pos.getY() + 1.1F, (float) pos.getZ() + rand.nextFloat(), 0.0D, 0.0D,
+        if (random.nextInt(25) == 0) {
+            world.addParticle(ModParticles.FIRE, (float) pos.getX() + random.nextFloat(),
+                    (float) pos.getY() + 1.1F, (float) pos.getZ() + random.nextFloat(), 0.0D, 0.0D,
                     0.0D);
         }
     }

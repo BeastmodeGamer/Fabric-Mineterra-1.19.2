@@ -51,9 +51,9 @@ public class ModBlocks {
     public static final Block CRIMTANE_ORE_BLOCK = registerBlock("crimtane_ore_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(5.0f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.STONE).luminance(6)));
     public static final Block METEORITE_ORE_BLOCK = registerBlock("meteorite_ore_block",
-            new MeteoriteOreBlock(FabricBlockSettings.of(Material.STONE).strength(5.5f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.STONE).luminance(6)));
+            new MeteoriteOreBlock(FabricBlockSettings.of(Material.STONE).strength(5.5f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.STONE).luminance(6).ticksRandomly()));
     public static final Block HELLSTONE_ORE_BLOCK = registerBlock("hellstone_ore_block",
-            new HellstoneOreBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).luminance(10)));
+            new HellstoneOreBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).luminance(10).ticksRandomly()));
 
     private static boolean never(BlockState state, BlockView world, BlockPos pos) {
         return false;

@@ -7,6 +7,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModSounds {
     public static SoundEvent ENTITY_PLAYER_FULL_MANA = registerSoundEvent("entity.player.full_mana");
+    public static SoundEvent ITEM_EXPLOSIVE_TRAP_EXPLODE = registerSoundEvent("item.explosive_trap.explode");
     public static SoundEvent ITEM_MANA_CRYSTAL_USE = registerSoundEvent("item.mana_crystal.use");
 
     private static SoundEvent registerSoundEvent(String name) {

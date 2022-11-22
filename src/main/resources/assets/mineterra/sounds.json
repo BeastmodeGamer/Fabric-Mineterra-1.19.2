@@ -6,6 +6,15 @@
       "mineterra:entity/player/full_mana"
     ]
   },
+  "item.explosive_trap.explode": {
+    "category": "neutral",
+    "subtitle": "Explosion kaboom",
+    "sounds": [
+      "mineterra:item/explosive_trap/explode_0",
+      "mineterra:item/explosive_trap/explode_1",
+      "mineterra:item/explosive_trap/explode_2"
+    ]
+  },
   "item.mana_crystal.use": {
     "category": "neutral",
     "subtitle": "Mana crystal used",

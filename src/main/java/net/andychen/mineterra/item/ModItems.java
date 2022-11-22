@@ -8,6 +8,7 @@ import net.andychen.mineterra.item.custom.TestItem;
 import net.andychen.mineterra.item.custom.armor.CopperArmorItem;
 import net.andychen.mineterra.item.custom.bows.HellstoneBowItem;
 import net.andychen.mineterra.item.custom.bows.ModBowItem;
+import net.andychen.mineterra.item.custom.swords.HellstoneSwordItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -239,7 +240,7 @@ public class ModItems {
             new Item(new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
 
     public static final Item HELLSTONE_SWORD = registerItem("hellstone_sword",
-            new SwordItem(ModToolMaterial.HELLSTONE, 4, -2.4f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
+            new HellstoneSwordItem(ModToolMaterial.HELLSTONE, 4, -2.4f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_PICKAXE = registerItem("hellstone_pickaxe",
             new PickaxeItem(ModToolMaterial.HELLSTONE, 2, -2.8f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_AXE = registerItem("hellstone_axe",
