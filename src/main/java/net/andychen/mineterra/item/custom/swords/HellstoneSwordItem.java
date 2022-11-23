@@ -2,6 +2,7 @@ package net.andychen.mineterra.item.custom.swords;
 
 import net.andychen.mineterra.particle.ModParticles;
 import net.andychen.mineterra.sounds.ModSounds;
+import net.andychen.mineterra.util.access.ServerWorldMixinAccess;
 import net.minecraft.enchantment.ProtectionEnchantment;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
@@ -19,16 +20,13 @@ import net.minecraft.world.explosion.Explosion;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.Random;
 
 public class HellstoneSwordItem extends SwordItem {
     private final float attackDamage;
-    private Random random = new Random();
 
     public HellstoneSwordItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.attackDamage = (float) attackDamage + toolMaterial.getAttackDamage();
-        ;
     }
 
     @Override
@@ -54,7 +52,7 @@ public class HellstoneSwordItem extends SwordItem {
                         do {
                             if (!var19.hasNext()) { // Reach last mob in list, play sound and spawn explosion particles, break loop
                                 world.playSound((PlayerEntity) null, target.getX(), target.getY(), target.getZ(), ModSounds.ITEM_EXPLOSIVE_TRAP_EXPLODE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
-                                this.spawnExplosionParticles(world, target);
+                                this.addExplosionParticles(world, target);
 
                                 break label166;
                             }
@@ -90,15 +88,16 @@ public class HellstoneSwordItem extends SwordItem {
                 }
             }
         }
-        return false;
+        return super.postHit(stack, target, attacker);
     }
 
-    public void spawnExplosionParticles(World world, LivingEntity livingEntity) {
-        ((ServerWorld) world).spawnParticles(ParticleTypes.LAVA, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), 80,
-                0.2D, 1.5D, -0.2D, 1.0D);
-        ((ServerWorld) world).spawnParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, livingEntity.getX(), livingEntity.getBodyY(0.5D), livingEntity.getZ(), 15,
-                random.nextDouble(-0.05, 0.05), random.nextDouble(0.25), random.nextDouble(-0.05, 0.05), 0.2D);
-        ((ServerWorld) world).spawnParticles(ModParticles.FIRE, livingEntity.getX(), livingEntity.getBodyY(0.5D), livingEntity.getZ(), 50,
-                random.nextDouble(-0.1, 0.1), random.nextDouble(-0.1, 0.1), random.nextDouble(-0.1, 0.1), 0.5D);
+    public void addExplosionParticles(World world, LivingEntity livingEntity) {
+        ServerWorldMixinAccess serverWorld = (ServerWorldMixinAccess) ((ServerWorld) world);
+        serverWorld.addParticle(ParticleTypes.LAVA, true, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(),
+                -0.5D, 0.5D, 0, 0.75D, -0.5D, 0.5D, 80);
+        serverWorld.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, true, livingEntity.getX(), livingEntity.getY(),
+                livingEntity.getZ(), -0.1D, 0.1D, 0, 0.5D, -0.1D, 0.1D,15);
+        serverWorld.addParticle(ModParticles.FIRE, true, livingEntity.getX(), livingEntity.getBodyY(0.5D),
+                livingEntity.getZ(), -0.5D, 0.5D, 0, 0.5D, -0.5D, 0.5D, 50);
     }
 }

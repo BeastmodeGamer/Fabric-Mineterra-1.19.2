@@ -1,6 +1,7 @@
 package net.andychen.mineterra;
 
 import net.andychen.mineterra.block.ModBlocks;
+import net.andychen.mineterra.effect.ModStatusEffects;
 import net.andychen.mineterra.event.AttackEntityHandler;
 import net.andychen.mineterra.event.PlayerEvents;
 import net.andychen.mineterra.item.ModItems;
@@ -22,6 +23,7 @@ public class MineTerra implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
+		ModStatusEffects.registerEffects();
 
 		ModNetworking.registerC2SPackets();
 		ServerPlayerEvents.COPY_FROM.register(new PlayerEvents());

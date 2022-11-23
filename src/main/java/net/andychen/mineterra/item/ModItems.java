@@ -240,7 +240,7 @@ public class ModItems {
             new Item(new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
 
     public static final Item HELLSTONE_SWORD = registerItem("hellstone_sword",
-            new HellstoneSwordItem(ModToolMaterial.HELLSTONE, 4, -2.4f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
+            new HellstoneSwordItem(ModToolMaterial.HELLSTONE, 4, -3.0f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_PICKAXE = registerItem("hellstone_pickaxe",
             new PickaxeItem(ModToolMaterial.HELLSTONE, 2, -2.8f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_AXE = registerItem("hellstone_axe",

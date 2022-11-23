@@ -7,6 +7,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModParticles {
+    public static final DefaultParticleType BLOOD = registerParticle("blood", FabricParticleTypes.simple());
+    public static final DefaultParticleType BLUE_MAGIC = registerParticle("blue_magic", FabricParticleTypes.simple());
     public static final DefaultParticleType FIRE = registerParticle("fire", FabricParticleTypes.simple());
 
     private static DefaultParticleType registerParticle(String name, DefaultParticleType particle) {

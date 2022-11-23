@@ -1,6 +1,7 @@
 package net.andychen.mineterra.networking;
 
 import net.andychen.mineterra.MineTerra;
+import net.andychen.mineterra.networking.packet.AddParticleS2CPacket;
 import net.andychen.mineterra.networking.packet.ManaRegenTimeSyncDataS2CPacket;
 import net.andychen.mineterra.networking.packet.ManaSyncDataS2CPacket;
 import net.andychen.mineterra.networking.packet.MaxManaSyncDataS2CPacket;
@@ -11,6 +12,7 @@ public class ModNetworking {
     public static final Identifier MANA_SYNC_ID = new Identifier(MineTerra.MOD_ID, "mana_sync");
     public static final Identifier MAX_MANA_SYNC_ID = new Identifier(MineTerra.MOD_ID, "max_mana_sync");
     public static final Identifier MANA_REGEN_TIME_SYNC_ID = new Identifier(MineTerra.MOD_ID, "mana_regen_time_sync");
+    public static final Identifier ADD_PARTICLE_ID = new Identifier(MineTerra.MOD_ID, "add_particle");
 
     public static void registerC2SPackets() {
     }
@@ -19,5 +21,6 @@ public class ModNetworking {
         ClientPlayNetworking.registerGlobalReceiver(MANA_SYNC_ID, ManaSyncDataS2CPacket::receive);
         ClientPlayNetworking.registerGlobalReceiver(MAX_MANA_SYNC_ID, MaxManaSyncDataS2CPacket::receive);
         ClientPlayNetworking.registerGlobalReceiver(MANA_REGEN_TIME_SYNC_ID, ManaRegenTimeSyncDataS2CPacket::receive);
+        ClientPlayNetworking.registerGlobalReceiver(ADD_PARTICLE_ID, AddParticleS2CPacket::receive);
     }
 }
