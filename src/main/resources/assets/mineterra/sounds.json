@@ -1,9 +1,100 @@
 {
+  "block.pot.break": {
+    "category": "block",
+    "subtitle": "Pot shatters",
+    "sounds": [
+      "mineterra:block/pot/break"
+    ]
+  },
+  "entity.boss.roar": {
+    "category": "hostile",
+    "subtitle": "Boss roars",
+    "sounds": [
+      "mineterra:entity/boss/roar"
+    ]
+  },
+  "entity.fallen_star.disappear": {
+    "category": "neutral",
+    "subtitle": "Fallen star disappear",
+    "sounds": [
+      "mineterra:entity/fallen_star/disappear"
+    ]
+  },
+  "entity.fallen_star.falling": {
+    "category": "neutral",
+    "subtitle": "Falling star",
+    "sounds": [
+      "mineterra:entity/fallen_star/falling"
+    ]
+  },
+  "entity.generic.death": {
+    "category": "hostile",
+    "subtitle": "MineTerra mob dies",
+    "sounds": [
+      "mineterra:entity/generic/death"
+    ]
+  },
+  "entity.generic.hurt": {
+    "category": "hostile",
+    "subtitle": "MineTerra mob hurts",
+    "sounds": [
+      "mineterra:entity/generic/hurt"
+    ]
+  },
+  "entity.generic.teleport": {
+    "category": "hostile",
+    "subtitle": "MineTerra mob teleports",
+    "sounds": [
+      "mineterra:entity/generic/teleport"
+    ]
+  },
+  "entity.goblin.ambient_1": {
+    "category": "hostile",
+    "subtitle": "Goblin grunts",
+    "sounds": [
+      "mineterra:entity/goblin/ambient_1"
+    ]
+  },
+  "entity.goblin.ambient_2": {
+    "category": "hostile",
+    "subtitle": "Goblin grunts",
+    "sounds": [
+      "mineterra:entity/goblin/ambient_2"
+    ]
+  },
+  "entity.goblin.death": {
+    "category": "hostile",
+    "subtitle": "Goblin dies",
+    "sounds": [
+      "mineterra:entity/goblin/death"
+    ]
+  },
+  "entity.goblin.hurt": {
+    "category": "hostile",
+    "subtitle": "Goblin hurts",
+    "sounds": [
+      "mineterra:entity/goblin/hurt"
+    ]
+  },
   "entity.player.full_mana": {
     "category": "player",
     "subtitle": "Full mana reached",
     "sounds": [
       "mineterra:entity/player/full_mana"
+    ]
+  },
+  "entity.spell.death": {
+    "category": "neutral",
+    "subtitle": "Spell dies",
+    "sounds": [
+      "mineterra:entity/spell/death"
+    ]
+  },
+  "entity.spell.hurt": {
+    "category": "neutral",
+    "subtitle": "Spell hurts",
+    "sounds": [
+      "mineterra:entity/spell/hurt"
     ]
   },
   "item.explosive_trap.explode": {
@@ -20,6 +111,27 @@
     "subtitle": "Mana crystal used",
     "sounds": [
       "mineterra:item/mana_crystal"
+    ]
+  },
+  "item.gun.shoot": {
+    "category": "neutral",
+    "subtitle": "Gun shot",
+    "sounds": [
+      "mineterra:item/gun_shoot"
+    ]
+  },
+  "music.goblin_army": {
+    "category": "music",
+    "subtitle": "Goblin Army music",
+    "sounds": [
+      "mineterra:music/goblin_army"
+    ]
+  },
+  "music.goblin_army_loop": {
+    "category": "music",
+    "subtitle": "Goblin Army music loop",
+    "sounds": [
+      "mineterra:music/goblin_army_loop"
     ]
   }
 }

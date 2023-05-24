@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "mineterra:block/pot_0",
+        "weight": 1
+      },
+      {
+        "model": "mineterra:block/pot_1",
+        "weight": 1
+      },
+      {
+        "model": "mineterra:block/pot_2",
+        "weight": 1
+      }
+    ]
+  }
+}

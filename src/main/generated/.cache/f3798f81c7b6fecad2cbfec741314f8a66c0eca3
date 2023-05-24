@@ -1,4 +1,4 @@
-// 1.19.2	2022-11-15T17:13:58.8928116	Models
+// 1.19.2	2022-12-29T23:01:09.4910646	Models
 dff41b1be4fe782384bb8e83e3ce9e4c78a73507 assets\mineterra\models\item\silver_ore.json
 4bdb5ae761fe6f0587935c52b9568de64ccc9bec assets\mineterra\models\block\topaz_ore_block.json
 acfc3beaa66c03a9e3f8a5ed6b7c0dfc41aacb59 assets\mineterra\models\block\platinum_ore_block.json
@@ -17,6 +17,7 @@ fefdf24d862ccfc0c977ed5b16ce1e657dd2066f assets\mineterra\models\item\hellstone_
 99d7871eb2656ac23b7b1ed7aa7479461686af28 assets\mineterra\blockstates\demonite_ore_block.json
 9005c5bfbfbd06209e0a4cab55cdd137e6b0e8c4 assets\mineterra\models\item\silver_boots.json
 e87cf667ad05673d5fc5355d3f4d0811cf329feb assets\mineterra\models\item\lead_boots.json
+dbc15677d9ccef4eef11dbc72f4f7adb4506ba3b assets\mineterra\models\item\musket_ball.json
 af9010b6808f044788da0cfa73237a64d4bed5f3 assets\mineterra\models\item\copper_ore.json
 b45fabb7c82b25df9ad29128070500ef9d7bc266 assets\mineterra\models\item\demonite_ore.json
 436aacf9c3f16daadae2866275281527445e6ddc assets\mineterra\models\item\hellstone_chestplate.json
@@ -55,6 +56,7 @@ f597f93ad801beec26c090f04495f4f220b337bc assets\mineterra\blockstates\sapphire_o
 8ed1b4e7a0011adc98d21b731a161349ee714110 assets\mineterra\models\item\copper_leggings.json
 04645016fbff241a949cf84c3fc16ad001222012 assets\mineterra\models\block\tungsten_ore_block.json
 26ee31f3f3af4eaa1b5e3499841a6eaf0c6ea55f assets\mineterra\models\item\copper_helmet.json
+a54ef4b490d665a966d55b09e262afd8363ff2d8 assets\mineterra\models\item\goblin_battle_standard.json
 52b184d450a367855e252bfc9b0ae30deb867c0c assets\mineterra\models\item\hellstone_ingot.json
 dd824875777b51e13a39ca5459181b6014ac4f0a assets\mineterra\models\item\amethyst_ore_block.json
 83cce2cc88cbbefc45d062b2f5928de166c7fdd2 assets\mineterra\models\block\diamond_ore_block.json

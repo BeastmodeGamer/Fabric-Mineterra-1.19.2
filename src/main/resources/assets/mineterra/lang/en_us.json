@@ -110,6 +110,12 @@
 	"item.mineterra.hellstone_leggings": "Molten Greaves",
 	"item.mineterra.hellstone_boots": "Molten Boots",
 
+	"item.mineterra.musket": "Musket",
+	"item.mineterra.star_cannon": "Star Cannon",
+
+	"item.mineterra.jester_arrow": "Jester's Arrow",
+	"item.mineterra.musket_ball": "Musket Ball",
+
 	"item.mineterra.amethyst": "Amethyst",
 	"item.mineterra.topaz": "Topaz",
 	"item.mineterra.sapphire": "Sapphire",
@@ -117,7 +123,20 @@
 	"item.mineterra.ruby": "Ruby",
 	"item.mineterra.diamond": "Diamond",
 
+	"item.mineterra.fallen_star": "Fallen Star",
 	"item.mineterra.mana_crystal": "Mana Crystal",
+
+	"item.mineterra.release_lantern": "Release Lantern",
+	"item.mineterra.spiky_ball": "Spiky Ball",
+
+	"item.mineterra.goblin_battle_standard": "Goblin Battle Standard",
+
+	"item.mineterra.goblin_archer_spawn_egg": "Goblin Archer Spawn Egg",
+	"item.mineterra.goblin_peon_spawn_egg": "Goblin Peon Spawn Egg",
+	"item.mineterra.goblin_thief_spawn_egg": "Goblin Thief Spawn Egg",
+	"item.mineterra.goblin_scout_spawn_egg": "Goblin Scout Spawn Egg",
+	"item.mineterra.goblin_sorcerer_spawn_egg": "Goblin Sorcerer Spawn Egg",
+	"item.mineterra.goblin_warrior_spawn_egg": "Goblin Warrior Spawn Egg",
 
 	"block.mineterra.amethyst_ore_block": "Amethyst Ore",
 	"block.mineterra.topaz_ore_block": "Topaz Ore",
@@ -136,6 +155,35 @@
 	"block.mineterra.crimtane_ore_block": "Crimtane Ore",
 	"block.mineterra.meteorite_ore_block": "Meteorite",
 	"block.mineterra.hellstone_ore_block": "Hellstone",
+
+	"block.mineterra.hellstone_bricks": "Hellstone Bricks",
+
+	"block.mineterra.pot": "Pot",
+	"block.mineterra.hellforge": "Hellforge",
+
+	"container.mineterra.hellforge": "Hellforge",
+
+	"entity.mineterra.chaos_ball": "Chaos Ball",
+	"entity.mineterra.fallen_star": "Fallen Star",
+	"entity.mineterra.goblin_archer": "Goblin Archer",
+	"entity.mineterra.goblin_peon": "Goblin Peon",
+	"entity.mineterra.goblin_scout": "Goblin Scout",
+	"entity.mineterra.goblin_sorcerer": "Goblin Sorcerer",
+	"entity.mineterra.goblin_thief": "Goblin Thief",
+	"entity.mineterra.goblin_warrior": "Goblin Warrior",
+	"entity.mineterra.lantern": "Lantern",
+	"entity.mineterra.spiky_ball": "Spiky Ball",
+
+	"effect.mineterra.wrath": "Wrath",
+
+	"attribute.name.generic.ranged_damage": "Ranged Damage",
+	"attribute.name.generic.crit_chance": "Critical Strike Chance",
+
+	"event.mineterra.invasion": "Goblin Army",
+	"event.mineterra.invasion.invaders_remaining": "Invaders Remaining: %s",
+	"event.mineterra.invasion.victory": "Victory",
+
+	"death.attack.fallenStar": "%1$s was reduced to stardust",
 
 	"itemGroup.mineterra.mineterra": "MineTerra"
 }

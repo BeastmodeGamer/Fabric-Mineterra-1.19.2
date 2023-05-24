@@ -1,9 +1,9 @@
 package net.andychen.mineterra.block;
 
 import net.andychen.mineterra.MineTerra;
-import net.andychen.mineterra.block.custom.HellstoneOreBlock;
-import net.andychen.mineterra.block.custom.MeteoriteOreBlock;
+import net.andychen.mineterra.block.custom.*;
 import net.andychen.mineterra.item.ModItemGroup;
+import net.andychen.mineterra.sounds.ModSoundGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -46,34 +46,48 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(3.5f).resistance(4.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block PLATINUM_ORE = registerBlock("platinum_ore_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).resistance(4.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block DEMONITE_ORE_BLOCK = registerBlock("demonite_ore_block",
+    public static final Block DEMONITE_ORE = registerBlock("demonite_ore_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(5.0f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.STONE).luminance(6)));
-    public static final Block CRIMTANE_ORE_BLOCK = registerBlock("crimtane_ore_block",
+    public static final Block CRIMTANE_ORE = registerBlock("crimtane_ore_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(5.0f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.STONE).luminance(6)));
-    public static final Block METEORITE_ORE_BLOCK = registerBlock("meteorite_ore_block",
+    public static final Block METEORITE_ORE = registerBlock("meteorite_ore_block",
             new MeteoriteOreBlock(FabricBlockSettings.of(Material.STONE).strength(5.5f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.STONE).luminance(6).ticksRandomly()));
-    public static final Block HELLSTONE_ORE_BLOCK = registerBlock("hellstone_ore_block",
+    public static final Block HELLSTONE_ORE = registerFireproofBlock("hellstone_ore_block",
             new HellstoneOreBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).luminance(10).ticksRandomly()));
+
+    public static final Block HELLSTONE_BRICKS = registerFireproofBlock("hellstone_bricks",
+            new HellstoneBrickBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).luminance(10)));
+
+    public static final Block POT = registerBlock("pot",
+            new PotBlock(FabricBlockSettings.of(Material.STONE).breakInstantly().nonOpaque().sounds(ModSoundGroup.POT)));
+    public static final Block HELLFORGE = registerFireproofBlock("hellforge",
+            new HellforgeBlock(FabricBlockSettings.of(Material.STONE).nonOpaque().strength(6.0f).resistance(6000.0f).requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS).luminance(13)));
+
 
     private static boolean never(BlockState state, BlockView world, BlockPos pos) {
         return false;
     }
 
-    private static Block registerBlock(String name, Block block){
+    private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registry.BLOCK, new Identifier(MineTerra.MOD_ID, name), block);
     }
 
-    private static Block registerBlockWithoutBlockItem(String name, Block block){
+    private static Block registerFireproofBlock(String name, Block block) {
+        Registry.register(Registry.ITEM, new Identifier(MineTerra.MOD_ID, name), new BlockItem(block, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
         return Registry.register(Registry.BLOCK, new Identifier(MineTerra.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block){
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registry.BLOCK, new Identifier(MineTerra.MOD_ID, name), block);
+    }
+
+    private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registry.ITEM, new Identifier(MineTerra.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     }
 
-    public static void registerModBlocks(){
+    public static void registerModBlocks() {
         System.out.println("Registering ModBlocks for " + MineTerra.MOD_ID);
     }
 }

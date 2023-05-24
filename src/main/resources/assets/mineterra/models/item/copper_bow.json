@@ -83,14 +83,14 @@
         {
             "predicate": {
                 "minecraft:pulling": 1,
-                "minecraft:pull": 0.65
+                "minecraft:pull": 0.7
             },
             "model": "mineterra:item/copper_bow_pulling_1"
         },
         {
             "predicate": {
                 "minecraft:pulling": 1,
-                "minecraft:pull": 0.9
+                "minecraft:pull": 0.97
             },
             "model": "mineterra:item/copper_bow_pulling_2"
         }

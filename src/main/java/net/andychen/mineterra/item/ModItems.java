@@ -1,13 +1,15 @@
 package net.andychen.mineterra.item;
 
 import net.andychen.mineterra.MineTerra;
-import net.andychen.mineterra.item.custom.ManaCrystalItem;
-import net.andychen.mineterra.item.custom.Test2Item;
-import net.andychen.mineterra.item.custom.Test3Item;
-import net.andychen.mineterra.item.custom.TestItem;
-import net.andychen.mineterra.item.custom.armor.CopperArmorItem;
+import net.andychen.mineterra.entity.ModEntities;
+import net.andychen.mineterra.item.custom.*;
+import net.andychen.mineterra.item.custom.ammo.BulletItem;
+import net.andychen.mineterra.item.custom.ammo.JesterArrowItem;
+import net.andychen.mineterra.item.custom.armor.ModArmorItem;
 import net.andychen.mineterra.item.custom.bows.HellstoneBowItem;
 import net.andychen.mineterra.item.custom.bows.ModBowItem;
+import net.andychen.mineterra.item.custom.guns.GunItem;
+import net.andychen.mineterra.item.custom.guns.StarCannonItem;
 import net.andychen.mineterra.item.custom.swords.HellstoneSwordItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
@@ -32,16 +34,16 @@ public class ModItems {
     public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
             new ShovelItem(ModToolMaterial.COPPER, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item COPPER_BOW = registerItem("copper_bow",
-            new ModBowItem(1.0D, 4, 29, new FabricItemSettings().group(ModItemGroup.MINETERRA).maxDamage(400)));
+            new ModBowItem(1.0D, 0.04F, 29, 6.6F, new FabricItemSettings().group(ModItemGroup.MINETERRA).maxDamage(400)));
 
     public static final Item COPPER_HELMET = registerItem("copper_helmet",
-            new CopperArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate",
-            new CopperArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item COPPER_LEGGINGS = registerItem("copper_leggings",
-            new CopperArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item COPPER_BOOTS = registerItem("copper_boots",
-            new CopperArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.COPPER, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // TIN
     public static final Item TIN_ORE = registerItem("tin_ore",
@@ -59,13 +61,13 @@ public class ModItems {
             new ShovelItem(ModToolMaterial.TIN, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item TIN_HELMET = registerItem("tin_helmet",
-            new ArmorItem(ModArmorMaterial.TIN, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.TIN, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item TIN_CHESTPLATE = registerItem("tin_chestplate",
-            new ArmorItem(ModArmorMaterial.TIN, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.TIN, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item TIN_LEGGINGS = registerItem("tin_leggings",
-            new ArmorItem(ModArmorMaterial.TIN, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.TIN, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item TIN_BOOTS = registerItem("tin_boots",
-            new ArmorItem(ModArmorMaterial.TIN, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.TIN, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // LEAD
     public static final Item LEAD_ORE = registerItem("lead_ore",
@@ -83,13 +85,13 @@ public class ModItems {
             new ShovelItem(ModToolMaterial.LEAD, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item LEAD_HELMET = registerItem("lead_helmet",
-            new ArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item LEAD_CHESTPLATE = registerItem("lead_chestplate",
-            new ArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item LEAD_LEGGINGS = registerItem("lead_leggings",
-            new ArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item LEAD_BOOTS = registerItem("lead_boots",
-            new ArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.LEAD, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // SILVER
     public static final Item SILVER_ORE = registerItem("silver_ore",
@@ -107,13 +109,13 @@ public class ModItems {
             new ShovelItem(ModToolMaterial.SILVER, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item SILVER_HELMET = registerItem("silver_helmet",
-            new ArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item SILVER_CHESTPLATE = registerItem("silver_chestplate",
-            new ArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item SILVER_LEGGINGS = registerItem("silver_leggings",
-            new ArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item SILVER_BOOTS = registerItem("silver_boots",
-            new ArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.SILVER, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // TUNGSTEN
     public static final Item TUNGSTEN_ORE = registerItem("tungsten_ore",
@@ -131,13 +133,13 @@ public class ModItems {
             new ShovelItem(ModToolMaterial.TUNGSTEN, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item TUNGSTEN_HELMET = registerItem("tungsten_helmet",
-            new ArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item TUNGSTEN_CHESTPLATE = registerItem("tungsten_chestplate",
-            new ArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item TUNGSTEN_LEGGINGS = registerItem("tungsten_leggings",
-            new ArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item TUNGSTEN_BOOTS = registerItem("tungsten_boots",
-            new ArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.TUNGSTEN, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // PLATINUM
     public static final Item PLATINUM_ORE = registerItem("platinum_ore",
@@ -155,13 +157,13 @@ public class ModItems {
             new ShovelItem(ModToolMaterial.PLATINUM, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
-            new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate",
-            new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings",
-            new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
-            new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // DEMONITE
     public static final Item DEMONITE_ORE = registerItem("demonite_ore",
@@ -181,13 +183,13 @@ public class ModItems {
     //        new ModBowItem(3.0D, new FabricItemSettings().group(ModItemGroup.MINETERRA).maxDamage(600)));
 
     public static final Item DEMONITE_HELMET = registerItem("demonite_helmet",
-            new ArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item DEMONITE_CHESTPLATE = registerItem("demonite_chestplate",
-            new ArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item DEMONITE_LEGGINGS = registerItem("demonite_leggings",
-            new ArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item DEMONITE_BOOTS = registerItem("demonite_boots",
-            new ArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.DEMONITE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // CRIMTANE
     public static final Item CRIMTANE_ORE = registerItem("crimtane_ore",
@@ -207,13 +209,13 @@ public class ModItems {
     //        new ModBowItem(3.5D, new FabricItemSettings().group(ModItemGroup.MINETERRA).maxDamage(600)));
 
     public static final Item CRIMTANE_HELMET = registerItem("crimtane_helmet",
-            new ArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item CRIMTANE_CHESTPLATE = registerItem("crimtane_chestplate",
-            new ArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item CRIMTANE_LEGGINGS = registerItem("crimtane_leggings",
-            new ArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item CRIMTANE_BOOTS = registerItem("crimtane_boots",
-            new ArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.CRIMTANE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // METEORITE
     public static final Item METEORITE_ORE = registerItem("meteorite_ore",
@@ -225,13 +227,13 @@ public class ModItems {
             new AxeItem(ModToolMaterial.METEORITE, 5.5F, -3.0f, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     public static final Item METEORITE_HELMET = registerItem("meteorite_helmet",
-            new ArmorItem(ModArmorMaterial.METEORITE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.METEORITE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item METEORITE_CHESTPLATE = registerItem("meteorite_chestplate",
-            new ArmorItem(ModArmorMaterial.METEORITE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.METEORITE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item METEORITE_LEGGINGS = registerItem("meteorite_leggings",
-            new ArmorItem(ModArmorMaterial.METEORITE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.METEORITE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item METEORITE_BOOTS = registerItem("meteorite_boots",
-            new ArmorItem(ModArmorMaterial.METEORITE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.METEORITE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // HELLSTONE
     public static final Item HELLSTONE_ORE = registerItem("hellstone_ore",
@@ -246,18 +248,28 @@ public class ModItems {
     public static final Item HELLSTONE_AXE = registerItem("hellstone_axe",
             new AxeItem(ModToolMaterial.HELLSTONE, 6, -3.0f, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_SHOVEL = registerItem("hellstone_shovel",
-            new ShovelItem(ModToolMaterial.HELLSTONE, 1.5F, -3.0F, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+            new ShovelItem(ModToolMaterial.HELLSTONE, 1.5F, -3.0F, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_BOW = registerItem("hellstone_bow",
-            new HellstoneBowItem(4.0D, 4, 22, new FabricItemSettings().group(ModItemGroup.MINETERRA).maxDamage(650)));
+            new HellstoneBowItem(10.0D, 0.04F, 22, 8, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA).maxDamage(650)));
 
     public static final Item HELLSTONE_HELMET = registerItem("hellstone_helmet",
-            new ArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.HEAD, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.HEAD, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_CHESTPLATE = registerItem("hellstone_chestplate",
-            new ArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.CHEST, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.CHEST, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_LEGGINGS = registerItem("hellstone_leggings",
-            new ArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.LEGS, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.LEGS, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
     public static final Item HELLSTONE_BOOTS = registerItem("hellstone_boots",
-            new ArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.FEET, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
+            new ModArmorItem(ModArmorMaterial.HELLSTONE, EquipmentSlot.FEET, new FabricItemSettings().fireproof().group(ModItemGroup.MINETERRA)));
+
+    public static final Item MUSKET = registerItem("musket",
+            new GunItem(10.0D, 0.11D, new FabricItemSettings().group(ModItemGroup.MINETERRA).maxCount(1)));
+    public static final Item STAR_CANNON = registerItem("star_cannon",
+            new StarCannonItem(new FabricItemSettings().group(ModItemGroup.MINETERRA).maxCount(1)));
+
+    public static final Item JESTER_ARROW = registerItem("jester_arrow",
+            new JesterArrowItem(2.5D, 0.5F, 2, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item MUSKET_BALL = registerItem("musket_ball",
+            new BulletItem(2.0D, 4, 2, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     // GEMS
     public static final Item AMETHYST = registerItem("amethyst",
@@ -273,8 +285,31 @@ public class ModItems {
     public static final Item DIAMOND = registerItem("diamond",
             new Item(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
+    public static final Item FALLEN_STAR = registerItem("fallen_star",
+            new FallenStarItem(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
     public static final Item MANA_CRYSTAL = registerItem("mana_crystal",
             new ManaCrystalItem(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+
+    public static final Item RELEASE_LANTERN = registerItem("release_lantern",
+            new ReleaseLanternItem(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item SPIKY_BALL = registerItem("spiky_ball",
+            new SpikyBallItem(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+
+    public static final Item GOBLIN_BATTLE_STANDARD = registerItem("goblin_battle_standard",
+            new GoblinBattleStandardItem(new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+
+    public static final Item GOBLIN_ARCHER_SPAWN_EGG = registerItem("goblin_archer_spawn_egg",
+            new SpawnEggItem(ModEntities.GOBLIN_ARCHER, 6194849, 4686184, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item GOBLIN_PEON_SPAWN_EGG = registerItem("goblin_peon_spawn_egg",
+            new SpawnEggItem(ModEntities.GOBLIN_PEON,  9019743, 9728104, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item GOBLIN_SCOUT_SPAWN_EGG = registerItem("goblin_scout_spawn_egg",
+            new SpawnEggItem(ModEntities.GOBLIN_SCOUT, 6199457, 7688531, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item GOBLIN_SORCERER_SPAWN_EGG = registerItem("goblin_sorcerer_spawn_egg",
+            new SpawnEggItem(ModEntities.GOBLIN_SORCERER, 12498003, 9595003, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item GOBLIN_THIEF_SPAWN_EGG = registerItem("goblin_thief_spawn_egg",
+            new SpawnEggItem(ModEntities.GOBLIN_THIEF,  11184488, 4673618, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
+    public static final Item GOBLIN_WARRIOR_SPAWN_EGG = registerItem("goblin_warrior_spawn_egg",
+            new SpawnEggItem(ModEntities.GOBLIN_WARRIOR, 8102239, 11185078, new FabricItemSettings().group(ModItemGroup.MINETERRA)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(MineTerra.MOD_ID, name), item);

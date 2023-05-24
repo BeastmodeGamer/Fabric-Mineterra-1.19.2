@@ -5,7 +5,6 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
-import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
@@ -42,7 +41,7 @@ public enum ModToolMaterial implements ToolMaterial {
     CRIMTANE(5, 2031, 9.0F, 4.5F, 10, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.CRIMTANE_INGOT}); // Stronger than Netherite & Demonite
     }),
-    METEORITE(4, 1315, 8.5F, 4.5F, 25, () -> {
+    METEORITE(5, 1315, 8.5F, 4.5F, 25, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.METEORITE_INGOT}); // Stronger than Platinum
     }),
     HELLSTONE(6, 2131, 10.0F, 4.5F, 8, () -> {
@@ -54,7 +53,7 @@ public enum ModToolMaterial implements ToolMaterial {
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
-    private final Lazy<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     private ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
@@ -62,7 +61,7 @@ public enum ModToolMaterial implements ToolMaterial {
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairIngredient = new Lazy(repairIngredient);
+        this.repairIngredient = repairIngredient;
     }
 
     public int getDurability() {

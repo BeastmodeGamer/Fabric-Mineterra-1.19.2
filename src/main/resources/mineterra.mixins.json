@@ -6,11 +6,21 @@
   "mixins": [
     "PlayerEntityManaMixin",
     "ServerPlayerEntityManaMixin",
-    "ServerWorldMixin"
+    "ServerWorldMixin",
+    "WorldMixin",
+    "ItemStackMixin",
+    "LivingEntityMixin",
+    "PlayerInventoryMixin",
+    "PlayerScreenHandlerMixin"
   ],
   "client": [
     "client.MineTerraMixin",
-    "client.InGameHudMixin"
+    "client.InGameHudMixin",
+    "client.InventoryScreenMixin",
+    "client.PlayerEntityRendererMixin",
+    "client.ArmorStandEntityRendererMixin",
+    "client.ArmorFeatureRendererMixin",
+    "client.BipedEntityModelMixin"
   ],
   "injectors": {
     "defaultRequire": 1

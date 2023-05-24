@@ -3,10 +3,10 @@ package net.andychen.mineterra.util;
 import java.util.Random;
 
 public class WeaponUtil {
-    private static Random random = new Random();
 
-    public static boolean calculateCritChance(int crit) {
-        if (random.nextInt(1, 101) <= crit) {
+    public static boolean calculateCritChance(float crit) {
+        Random random = new Random();
+        if (random.nextFloat(0, 1) <= crit) {
             return true;
         }
         return false;

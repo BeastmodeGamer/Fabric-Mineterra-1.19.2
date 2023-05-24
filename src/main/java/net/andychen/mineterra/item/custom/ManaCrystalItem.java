@@ -63,9 +63,9 @@ public class ManaCrystalItem extends Item {
         for (double u = 14 * Math.PI / 9 ; u <= 2 * Math.PI * 1; u += 0.05) {
             float i = (float) (Math.cos(u)/4 + Math.cos(u)/4);
             float j = (float) (Math.cos(u)/7 + Math.cos(u)/7);
-            serverWorld.addParticle(ModParticles.BLUE_MAGIC, true,
+            serverWorld.addParticle(ModParticles.MAGIC_DUST, true,
                     user.getX(), user.getBodyY(0.5D), user.getZ(), -i, i, -i, i, -i, i, 12);
-            serverWorld.addParticle(ModParticles.BLUE_MAGIC, true,
+            serverWorld.addParticle(ModParticles.MAGIC_DUST, true,
                     user.getX(), user.getBodyY(0.5D), user.getZ(), -j, j, -j, j, -j, j, 12);
         }
 

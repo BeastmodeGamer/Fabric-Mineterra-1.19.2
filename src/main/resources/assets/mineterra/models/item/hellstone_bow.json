@@ -83,14 +83,14 @@
         {
             "predicate": {
                 "minecraft:pulling": 1,
-                "minecraft:pull": 0.39
+                "minecraft:pull": 0.53
             },
             "model": "mineterra:item/hellstone_bow_pulling_1"
         },
         {
             "predicate": {
                 "minecraft:pulling": 1,
-                "minecraft:pull": 0.54
+                "minecraft:pull": 0.73
             },
             "model": "mineterra:item/hellstone_bow_pulling_2"
         }

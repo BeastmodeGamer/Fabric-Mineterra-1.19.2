@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "mineterra:goblin_archer",
+    "mineterra:goblin_peon",
+    "mineterra:goblin_scout",
+    "mineterra:goblin_sorcerer",
+    "mineterra:goblin_thief",
+    "mineterra:goblin_warrior"
+  ]
+}

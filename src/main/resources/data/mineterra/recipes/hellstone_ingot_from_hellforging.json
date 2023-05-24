@@ -1,0 +1,22 @@
+{
+  "type": "mineterra:hellforging",
+  "ingredients": [
+    {
+      "item": "mineterra:hellstone_ore"
+    },
+    {
+      "item": "mineterra:hellstone_ore"
+    },
+    {
+      "item": "mineterra:hellstone_ore"
+    },
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "result": {
+    "item": "mineterra:hellstone_ingot"
+  },
+  "experience": 2,
+  "cookingtime": 400
+}

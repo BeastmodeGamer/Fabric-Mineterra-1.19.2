@@ -18,7 +18,8 @@ public class MeteoriteOreBlock extends Block {
 
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.isFireImmune() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity) entity)) {
-            entity.damage(DamageSource.HOT_FLOOR, 1.0F);
+            entity.damage(DamageSource.ON_FIRE, 1.0F);
+            entity.setOnFireFor(3);
         }
 
         super.onSteppedOn(world, pos, state, entity);

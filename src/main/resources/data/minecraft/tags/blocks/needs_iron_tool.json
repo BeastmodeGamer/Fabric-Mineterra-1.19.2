@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "mineterra:amethyst_ore_block",
+    "mineterra:topaz_ore_block",
+    "mineterra:sapphire_ore_block",
+    "mineterra:emerald_ore_block",
+    "mineterra:ruby_ore_block",
+    "mineterra:diamond_ore_block",
+    "mineterra:silver_ore_block",
+    "mineterra:tungsten_ore_block",
+    "mineterra:platinum_ore_block"
+  ]
+}

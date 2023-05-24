@@ -13,7 +13,6 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
@@ -51,7 +50,7 @@ public class HellstoneSwordItem extends SwordItem {
                     do {
                         do {
                             if (!var19.hasNext()) { // Reach last mob in list, play sound and spawn explosion particles, break loop
-                                world.playSound((PlayerEntity) null, target.getX(), target.getY(), target.getZ(), ModSounds.ITEM_EXPLOSIVE_TRAP_EXPLODE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+                                target.playSound(ModSounds.ITEM_EXPLOSIVE_TRAP_EXPLODE,1.0F, 1.0F);
                                 this.addExplosionParticles(world, target);
 
                                 break label166;

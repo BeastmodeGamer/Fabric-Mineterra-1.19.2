@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "mineterra:hellstone_ore_block",
+    "mineterra:crimtane_ore_block",
+    "mineterra:demonite_ore_block",
+    "mineterra:copper_ore_block",
+    "mineterra:tin_ore_block",
+    "mineterra:lead_ore_block",
+    "mineterra:silver_ore_block",
+    "mineterra:tungsten_ore_block",
+    "mineterra:platinum_ore_block",
+    "mineterra:meteorite_ore_block",
+    "mineterra:amethyst_ore_block",
+    "mineterra:topaz_ore_block",
+    "mineterra:sapphire_ore_block",
+    "mineterra:emerald_ore_block",
+    "mineterra:ruby_ore_block",
+    "mineterra:diamond_ore_block",
+    "mineterra:hellforge"
+  ]
+}

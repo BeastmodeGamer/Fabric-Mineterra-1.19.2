@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mineterra:copper_ore_block",
+    "mineterra:tin_ore_block",
+    "mineterra:lead_ore_block"
+  ]
+}

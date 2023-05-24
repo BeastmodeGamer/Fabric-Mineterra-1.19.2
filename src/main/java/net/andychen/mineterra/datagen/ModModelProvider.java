@@ -28,10 +28,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SILVER_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TUNGSTEN_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PLATINUM_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEMONITE_ORE_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CRIMTANE_ORE_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.METEORITE_ORE_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HELLSTONE_ORE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEMONITE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CRIMTANE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.METEORITE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HELLSTONE_ORE);
     }
 
     @Override
@@ -122,12 +122,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CRIMTANE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.METEORITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.HELLSTONE_INGOT, Models.GENERATED);
-        
+
+        itemModelGenerator.register(ModItems.MUSKET_BALL, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.AMETHYST, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOPAZ, Models.GENERATED);
         itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMERALD, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.GOBLIN_BATTLE_STANDARD, Models.GENERATED);
     }
 }

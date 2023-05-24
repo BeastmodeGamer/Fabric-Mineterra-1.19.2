@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "mineterra:block/hellstone_bricks_1"
+	}
+}

@@ -13,13 +13,13 @@ public class TooltipUtil {
         return Text.translatable(" " + translateDamageText(damage + (double) j * 0.5D + 0.5D) + " Ranged Damage").formatted(Formatting.DARK_GREEN);
     }
 
-    public static Text getCritText(int crit) {
+    public static Text getCritText(float crit) {
         return Text.translatable(" " + crit + "% Critical Strike Chance").formatted(Formatting.DARK_GREEN);
     }
 
     public static Text getUseTimeText(float useTime) {
         String useTimeLevel= "Empty";
-        float i = useTime;
+        float i = (20 / (60 / (useTime)));
         if (i < 3) {
             useTimeLevel = "Insanely fast speed";
         } else if (3 <= i && i < 7) {
