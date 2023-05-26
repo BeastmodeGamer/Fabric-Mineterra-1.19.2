@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mineterra:block/hellforge",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "mineterra:block/hellforge"
+    },
+    "facing=south": {
+      "model": "mineterra:block/hellforge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mineterra:block/hellforge",
+      "y": 270
+    }
+  }
+}

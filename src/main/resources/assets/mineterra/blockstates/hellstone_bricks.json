@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "mineterra:block/hellstone_bricks_0"
+      },
+      {
+        "model": "mineterra:block/hellstone_bricks_0_mirrored"
+      },
+      {
+        "model": "mineterra:block/hellstone_bricks_1"
+      },
+      {
+        "model": "mineterra:block/hellstone_bricks_1_mirrored"
+      }
+    ]
+  }
+}
